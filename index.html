@@ -29,11 +29,11 @@
             <option value="Jazz">Jazz</option>
           </select>
         </div>
-        <div class="box" v-for="c in filteredCds">
-          <img :src="c.poster" alt="">
-          <h2>{{ c.title }}</h2>
-          <h4>{{ c.author }}</h4>
-          <h4>{{ c.year }}</h4>
+        <div class="box" v-for="cd in filteredCds">
+          <img :src="cd.poster" alt="">
+          <h2>{{ cd.title }}</h2>
+          <h4>{{ cd.author }}</h4>
+          <h4>{{ cd.year }}</h4>
 
         </div>
       </div>
